@@ -28,4 +28,3 @@ A simple, Dockerized Inventory Management System with basic CRUD operations.
 - **Web Server / Reverse Proxy**: Nginx
 
 ## Deployment
-For detailed deployment instructions on an AWS EC2 instance, refer to `doc.md`.
