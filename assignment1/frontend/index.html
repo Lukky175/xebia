@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management Pro</title>
+    <meta name="description" content="A premium inventory management system for your business.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="glass-header">
+            <div class="header-content">
+                <h1>Inventory<span class="highlight">Pro</span></h1>
+                <button id="addProductBtn" class="btn primary-btn">+ Add Product</button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="table-container glass-panel">
+                <table id="productsTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productsBody">
+                        <!-- Product rows will be inserted here dynamically -->
+                    </tbody>
+                </table>
+                <div id="loadingIndicator" class="loading">Loading products...</div>
+                <div id="emptyState" class="empty-state hidden">No products found. Add one to get started.</div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal Overlay -->
+    <div id="modalOverlay" class="modal-overlay hidden">
+        <div class="modal glass-panel">
+            <div class="modal-header">
+                <h2 id="modalTitle">Add New Product</h2>
+                <button id="closeModalBtn" class="close-btn">&times;</button>
+            </div>
+            <form id="productForm">
+                <input type="hidden" id="productId">
+                <div class="form-group">
+                    <label for="name">Product Name</label>
+                    <input type="text" id="name" required placeholder="Enter product name">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" rows="3" placeholder="Enter product description"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" min="0" required placeholder="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price ($)</label>
+                        <input type="number" id="price" min="0" step="0.01" required placeholder="0.00">
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="cancelBtn" class="btn secondary-btn">Cancel</button>
+                    <button type="submit" class="btn primary-btn">Save Product</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
