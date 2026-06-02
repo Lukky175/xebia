@@ -1,63 +1,126 @@
+# Job Seeker/appilcant
 ```
-┌─────────────┐
-│ Job Provider│
-└──────┬──────┘
+Register/Login
+      │
+      ▼
+Complete Profile
+      │
+      ▼
+Upload Resume
+      │
+      ▼
+Browse Internships
+      │
+      ▼
+Apply
+      │
+      ▼
+Track Application Status
+      │
+      ▼
+Accept Offer
+      │
+      ▼
+Perform Internship Tasks
+      │
+      ▼
+Receive Evaluation
+      │
+      ▼
+Download Certificate
+```
+
+# Job Providor
+```
+Register Company
        │
        ▼
-Create Internship
+Create Company Profile
        │
        ▼
-Admin Review (Optional)
+Post Internship
        │
        ▼
-Publish Internship
+Receive Applications
        │
        ▼
-┌─────────────┐
-│ Job Seeker  │
-└──────┬──────┘
+Review Candidates
        │
        ▼
-Search & Apply
+Shortlist / Reject
        │
        ▼
-Application Received
+Conduct Interviews
        │
        ▼
-Recruiter Reviews
+Send Offer
        │
        ▼
-Shortlist?
-   ┌───┴───┐
-   │       │
-  No      Yes
-   │       │
-Reject   Interview
-   │       │
-   ▼       ▼
-Notify   Evaluation
-Candidate   │
-            ▼
-       Offer Sent
-            │
-            ▼
-      Candidate Accepts
-            │
-            ▼
-      Internship Starts
-            │
-            ▼
-      Task Assignment
-            │
-            ▼
-     Progress Tracking
-            │
-            ▼
-      Final Evaluation
-            │
-            ▼
-Certificate Issued
-            │
-            ▼
- Internship Completed
+Assign Tasks
+       │
+       ▼
+Track Progress
+       │
+       ▼
+Evaluate Intern
+       │
+       ▼
+Issue Certificate
+```
+
+# Admin
+```
+Monitor Platform
+      │
+      ▼
+Verify Companies
+      │
+      ▼
+Review Internship Posts
+      │
+      ▼
+Approve / Reject Listings
+      │
+      ▼
+Handle Reports & Complaints
+      │
+      ▼
+Manage Users
+      │
+      ▼
+Generate Analytics
+      │
+      ▼
+Maintain Platform Settings
+```
+
+# Interactions
+```
+Job Provider
+     │
+ Posts Internship
+     │
+     ▼
+Job Seeker
+     │
+ Applies
+     │
+     ▼
+Job Provider
+     │
+ Reviews & Offers
+     │
+     ▼
+Job Seeker
+     │
+ Accepts Offer
+     │
+     ▼
+ Internship Execution
+     │
+     ▼
+Job Provider ──► Evaluation
+     │
+     ▼
+Admin (Oversight & Moderation)
 ```
