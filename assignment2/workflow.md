@@ -1,3 +1,4 @@
+```
 ┌─────────────┐
 │ Job Provider│
 └──────┬──────┘
@@ -59,3 +60,4 @@ Certificate Issued
             │
             ▼
  Internship Completed
+```
