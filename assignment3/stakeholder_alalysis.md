@@ -89,15 +89,3 @@ These stakeholders are primary users and highly impacted by system functionality
 ## Low Influence, Medium Interest
 
 ---
-
-# Communication Plan
-
-| Stakeholder            | Communication Method                    | Frequency             |
-| ---------------------- | --------------------------------------- | --------------------- |
-| Students               | Notifications, Email, Dashboard Updates | Daily/Weekly          |
-| Placement Officers     | Meetings, Reports, Dashboard            | Weekly                |
-| Recruiters             | Email, Recruitment Portal               | Per Recruitment Cycle |
-| Faculty Mentors        | Progress Reports, Meetings              | Monthly               |
-| College Administration | Executive Reports, Analytics Dashboard  | Quarterly             |
-| Alumni                 | Email, Community Portal                 | Monthly               |
-
